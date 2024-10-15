@@ -13,6 +13,17 @@ resource "azurerm_subnet" "subnets" {
   resource_group_name  = azurerm_resource_group.rg.name
   virtual_network_name = azurerm_virtual_network.vnet.name
   address_prefixes     = [each.value]
+
+  dynamic "delegation" {
+    for_each = each.key == "web" ? [1] : []
+    content {
+      name = "delegation"
+      service_delegation {
+        name    = "Microsoft.Web/serverFarms"
+        actions = ["Microsoft.Network/virtualNetworks/subnets/action"]
+      }
+    }
+  }
 }
 
 resource "azurerm_network_security_group" "nsg" {

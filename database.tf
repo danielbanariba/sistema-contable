@@ -1,4 +1,4 @@
-resource "azurerm_sql_server" "sqlserver" {
+resource "azurerm_mssql_server" "sqlserver" {
   name                         = "sql-${var.project}-${var.environment}"
   resource_group_name          = azurerm_resource_group.rg.name
   location                     = azurerm_resource_group.rg.location
@@ -9,12 +9,13 @@ resource "azurerm_sql_server" "sqlserver" {
   tags = var.tags
 }
 
-resource "azurerm_sql_database" "sqldb" {
-  name                = "sqldb-${var.project}-${var.environment}"
-  resource_group_name = azurerm_resource_group.rg.name
-  location            = azurerm_resource_group.rg.location
-  server_name         = azurerm_sql_server.sqlserver.name
-  edition             = "Standard"
+resource "azurerm_mssql_database" "sqldb" {
+  name           = "sqldb-${var.project}-${var.environment}"
+  server_id      = azurerm_mssql_server.sqlserver.id
+  collation      = "SQL_Latin1_General_CP1_CI_AS"
+  license_type   = "LicenseIncluded"
+  max_size_gb    = 2
+  sku_name       = "S0"
   
   tags = var.tags
 }
@@ -27,7 +28,7 @@ resource "azurerm_private_endpoint" "sql_pe" {
 
   private_service_connection {
     name                           = "psc-sql-${var.project}-${var.environment}"
-    private_connection_resource_id = azurerm_sql_server.sqlserver.id
+    private_connection_resource_id = azurerm_mssql_server.sqlserver.id
     is_manual_connection           = false
     subresource_names              = ["sqlServer"]
   }

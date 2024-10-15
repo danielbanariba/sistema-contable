@@ -40,11 +40,7 @@ variable "subnet_prefixes" {
 
 variable "app_service_sku" {
   description = "SKU for App Service Plan"
-  type        = map(string)
-  default = {
-    tier = "Standard"
-    size = "S1"
-  }
+  default     = "S1"
 }
 
 variable "sql_admin_login" {
