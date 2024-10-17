@@ -319,3 +319,5 @@ Para realizar cambios en la infraestructura:
 1. Modifica los archivos .tf relevantes
 2. Ejecuta `terraform plan` para ver los cambios propuestos
 3. Ejecuta `terraform apply` para aplicar los cambios
+
+Link del video explicativo: https://youtu.be/0oGockqFLQc
