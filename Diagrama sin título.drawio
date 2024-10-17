@@ -1,14 +1,38 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36" version="24.7.17">
   <diagram name="Página-1" id="TPvvo_-l6tkurhbwpSG9">
-    <mxGraphModel dx="2920" dy="1030" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2589" dy="867" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="-k7Hei3Dbmx0On5LG8Cz-423" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="-420" y="520" width="930" height="389" as="geometry" />
         </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-428" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="620" width="220" height="140" as="geometry" />
+        </mxCell>
         <mxCell id="-k7Hei3Dbmx0On5LG8Cz-424" value="Subnet" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_subnet;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" vertex="1" parent="1">
-          <mxGeometry x="-350" y="585" width="150" height="120" as="geometry" />
+          <mxGeometry x="-350" y="585" width="180" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-425" value="Subnet" style="sketch=0;outlineConnect=0;gradientColor=none;html=1;whiteSpace=wrap;fontSize=12;fontStyle=0;shape=mxgraph.aws4.group;grIcon=mxgraph.aws4.group_subnet;strokeColor=#879196;fillColor=none;verticalAlign=top;align=left;spacingLeft=30;fontColor=#879196;dashed=0;" vertex="1" parent="1">
+          <mxGeometry x="-70" y="730" width="210" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-426" value="" style="verticalLabelPosition=bottom;aspect=fixed;html=1;shape=mxgraph.salesforce.web;" vertex="1" parent="1">
+          <mxGeometry x="-6" y="768.4" width="82.66" height="65.3" as="geometry" />
+        </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-427" value="" style="html=1;verticalLabelPosition=bottom;align=center;labelBackgroundColor=#ffffff;verticalAlign=top;strokeWidth=2;strokeColor=#0080F0;shadow=0;dashed=0;shape=mxgraph.ios7.icons.data;" vertex="1" parent="1">
+          <mxGeometry x="353" y="655.45" width="54" height="69.1" as="geometry" />
+        </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-429" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;10.0.1.0/24&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="5" y="840" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-430" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.mysql_database;" vertex="1" parent="1">
+          <mxGeometry x="6.25" y="400" width="77.5" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-431" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.ms_sql_instance_2;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-170" y="290" width="120" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="-k7Hei3Dbmx0On5LG8Cz-432" value="" style="outlineConnect=0;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;shape=mxgraph.aws3.mysql_db_instance;fillColor=#2E73B8;gradientColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-420" y="260" width="140" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
