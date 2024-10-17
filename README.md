@@ -47,10 +47,10 @@ En este archivo, configuramos el proveedor de Azure y creamos el grupo de recurs
 ### 2. Red Virtual y Subnets (network.tf)
 
 #### Vnet
-![Diagrama de Vnet](img/vnet.drawio.svg)
+![Diagrama de Vnet](img/Vnet.drawio.svg)
 
 #### Subnets
-![Diagrama de Subnet](img/subnet.drawio.svg)
+![Diagrama de Subnet](img/Subnet.drawio.svg)
 
 
 Creamos una red virtual con tres subnets:
