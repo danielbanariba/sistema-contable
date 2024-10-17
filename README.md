@@ -29,7 +29,18 @@ El proyecto está organizado en varios archivos .tf, cada uno con un propósito 
 
 ### 1. Proveedor y Grupo de Recursos (main.tf)
 
-[[Captura de pantalla del contenido de main.tf]]
+```Java
+provider "azurerm" {
+  features {}
+  subscription_id = var.subscription_id # ID de suscripción de Azure
+}
+
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-${var.project}-${var.environment}"
+  location = var.location
+  tags     = var.tags
+}
+```
 
 En este archivo, configuramos el proveedor de Azure y creamos el grupo de recursos base para nuestro proyecto.
 
